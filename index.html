@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zhukov</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <audio id="click-sound" preload="auto">
+            <source src="-blin-zachem-ya-syuda-prishel.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="click-power" preload="auto">
+            <source src="davai-po-novoi-misha.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="click-end" preload="auto">
+            <source src="zdes-nashi-polnomochiya-vse.mp3" type="audio/mpeg">
+        </audio>
+        <h1>Александр Жуков</h1>
+        <p>Студент ДВФУ</p>
+        <p>Системное программирование👨🏻‍💻</p>
+        <div class="data-content">
+            <a href="mailto:zhukov46@icloud.com">zhukov46@icloud.com</a>&nbsp;|&nbsp;<a href="tel:+79143341390">+79143341390</a>
+        </div>
+        <div class="icon-container">
+            <a href="https://vk.com/blue_chill" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/VK_Logo.png" alt="VK Icon" class="vk-icon">
+            </a>
+            <a href="https://github.com/ALXSSSDR?tab=repositories" target="_blank">
+                <img src="https://www.pngmart.com/files/22/GitHub-PNG-Isolated-Photo.png" alt="GitHub Icon" class="github-icon">
+            </a>
+            <a href="https://t.me/blue_chill" target="_blank">
+                <img src="https://i.pinimg.com/originals/99/f0/3f/99f03fdee90d871d3d1e718c82feb8be.png" alt="T-Icon" class="T-icon">
+            </a>
+        </div>
+    </header>
+
+    <button class="btn">Repeat</button>
+    <button class="btn1">End</button>
+
+
+    <script>
+        var audio1 = document.getElementById("click-sound");
+        var tIcon = document.querySelector(".T-icon");
+
+        var power = document.getElementById("click-power");
+        var Btn = document.querySelector(".btn");
+
+        var end1 = document.getElementById("click-end");
+        var Btn1 = document.querySelector(".btn1");
+
+        tIcon.addEventListener("click", playClickSound1);
+
+        Btn.addEventListener("click", playClickSound2)
+        Btn1.addEventListener("click", playClickSound3)
+    
+        function playClickSound1() {
+          audio1.play();
+        }
+
+        function playClickSound2() {
+          power.play();
+        }
+
+        function playClickSound3() {
+          end1.play();
+        }
+
+    </script>
+</body>
+</html>
