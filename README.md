@@ -16,6 +16,6 @@
 
 ## Установка
 
-1. Клонируйте репозиторий: `git clone https://github.com/ALXSSSDR/homepage.git`
-2. Перейдите в папку проекта: `cd homepage`
+1. Клонируйте репозиторий: `git clone https://github.com/ALXSSSDR/Homepage.git`
+2. Перейдите в папку проекта: `cd Homepage`
 3. Откройте файл `index.html` в веб-браузере.
